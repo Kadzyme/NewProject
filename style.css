@@ -126,7 +126,7 @@ p {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/section-hero.jpg");
+    url("./images/section-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 94px;
