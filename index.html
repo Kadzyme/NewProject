@@ -61,27 +61,48 @@
         </div>
       </section>
       <!-- Modal -->
-      <!-- <div class="backdrop is-hidden" data-backdrop>
-        <div class="modal">
-          <button class="button-close-modal data-modal-close">
-            <svg>
-              <use href="icon-close-btn"></use>
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal" data-modal>
+          <button class="button-close-modal" data-modal-close>
+            <svg class="icon-black">
+              <use href="./icons/symbol-defs.svg#icon-close-black"></use>
             </svg>
           </button>
-          <form action="">
-            <h2 class="">Залиште свої дані, ми вам передзвонимо</h2>
+          <form>
+            <h2>Залиште свої дані, ми вам передзвонимо</h2>
 
             <div class="modal-form-field">
-              <label>Ім'я <br /><input type="text" class="input" /></label>
+              <label>
+                Ім'я <br />
+                <div class="input-field-container">
+                  <input type="text" class="input-field" />
+                  <svg class="icon">
+                    <use href="icons/symbol-defs.svg#icon-person-black"></use>
+                  </svg>
+                </div>
+              </label>
             </div>
             <div class="modal-form-field">
-              <label>Телефон <br /><input type="tel" class="input" /></label>
+              <label>
+                Телефон <br />
+                <div class="input-field-container">
+                  <input type="tel" class="input-field" />
+                  <svg class="icon">
+                    <use href="icons/symbol-defs.svg#icon-phone-black"></use>
+                  </svg>
+                </div>
+              </label>
             </div>
             <div class="modal-form-field">
-              <label
-                >Пошта
+              <label>
+                Пошта
                 <br />
-                <input type="email" class="input" />
+                <div class="input-field-container">
+                  <input type="email" class="input-field" />
+                  <svg class="icon">
+                    <use href="./icons/symbol-defs.svg#icon-email-black"></use>
+                  </svg>
+                </div>
               </label>
             </div>
             <div class="modal-form-field">
@@ -92,7 +113,7 @@
                 <textarea
                   cols="30"
                   rows="10"
-                  class="input comment-input"
+                  class="comment-input"
                   placeholder="Введіть текст"
                 ></textarea>
               </label>
@@ -106,7 +127,7 @@
             <button class="btn-send">Відправити</button>
           </form>
         </div>
-      </div> -->
+      </div>
 
       <!-- Наші особливості -->
       <section class="section">
@@ -420,7 +441,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer>
       <div class="container flex">
         <address class="address-container">
           <a href="/" class="logo">
@@ -474,7 +495,20 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p class="media-title">Підпишіться на розсилку</p>
+          <div class="footer-media-box">
+            <input type="email" class="footer-input" placeholder="E-mail" />
+            <button class="modal-open-btn" data-modal-open>
+              <span>Підписатися</span>
+              <svg class="icon">
+                <use href="icons/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

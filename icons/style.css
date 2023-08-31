@@ -15,34 +15,34 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+.icon-brand {
+  width: 1.78125em;
+}
+
+.icon-company {
+  width: 1.78125em;
+}
+
+.icon-company2 {
+  width: 1.78125em;
+}
+
+.icon-cube {
+  width: 1.78125em;
+}
+
+.icon-letter {
+  width: 1.34375em;
+}
+
 .icon-Logo {
-  width: 1.7666015625em;
+  width: 1.78125em;
 }
 
 .icon-smartphone {
   width: 0.625em;
 }
 
-.icon-brand {
-  width: 1.7666015625em;
-}
-
-.icon-company {
-  width: 1.7666015625em;
-}
-
-.icon-company2 {
-  width: 1.7666015625em;
-}
-
-.icon-cube {
-  width: 1.7666015625em;
-}
-
-.icon-letter {
-  width: 1.3330078125em;
-}
-
 .icon-yaco {
-  width: 1.7666015625em;
+  width: 1.78125em;
 }
