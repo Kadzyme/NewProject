@@ -24,8 +24,8 @@ footer {
   display: flex;
 }
 
-address {
-  font-style: normal;
+form h2 {
+  text-align: center;
 }
 
 .is-hidden {
@@ -534,6 +534,7 @@ footer .icon {
   line-height: 24px;
   letter-spacing: 0.42px;
   margin: 20px 0 9px;
+  font-style: normal;
 }
 
 .footer-contact {
