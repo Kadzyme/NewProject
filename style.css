@@ -1,3 +1,8 @@
+* {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -83,6 +88,7 @@ textarea {
   border-color: #2196f3;
   fill: #2196f3;
   cursor: pointer;
+  transition-property: border-color, fill;
 }
 
 .button-close-modal {
@@ -127,10 +133,12 @@ textarea {
 
 .input-field-container:hover .icon {
   fill: #2196f3;
+  transition-property: fill;
 }
 
 .button-close-modal:hover .icon-black {
   fill: #2196f3;
+  transition-property: fill;
 }
 
 .modal-form-field .comment-input {
@@ -188,6 +196,7 @@ textarea {
 .btn-send:hover {
   cursor: pointer;
   background-color: #27b0eb;
+  transition-property: background-color;
 }
 
 .container {
@@ -242,19 +251,29 @@ p {
   position: relative;
 }
 
-.item-link:hover::after {
+.item-link::after {
   content: "";
   position: absolute;
   top: 45px;
   left: 0;
   border-radius: 2px;
-  background: #2196f3;
-  width: 100%;
+  background-color: #2196f3;
+  width: 0;
   height: 4px;
+  opacity: 0;
+}
+
+.item-link:hover::after {
+  opacity: 1;
+  width: 100%;
+  transition-property: width, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-link:hover {
   color: #2196f3;
+  transition-property: color;
 }
 
 .list-contacts {
@@ -286,6 +305,7 @@ p {
 
 .header-contact:hover .icon-header {
   fill: #2196f3;
+  transition-property: fill;
 }
 
 .logo {
@@ -347,6 +367,7 @@ p {
 .hero-btn:hover {
   cursor: pointer;
   background-color: #27b0eb;
+  transition-property: background-color;
 }
 
 .advantages {
@@ -488,10 +509,12 @@ footer .icon {
 
 .icon-container:hover .icon {
   fill: white;
+  transition-property: fill;
 }
 
 .icon-container:hover {
   background-color: #2196f3;
+  transition-property: background-color;
 }
 
 .color-section {
@@ -521,10 +544,12 @@ footer .icon {
 
 .client-item:hover .client-logo {
   fill: #2196f3;
+  transition-property: fill;
 }
 
 .client-item:hover {
   outline: 1px solid #2196f3;
+  transition-property: outline;
 }
 
 .logo-web-footer {
@@ -612,6 +637,7 @@ footer .icon {
 .modal-open-btn:hover {
   cursor: pointer;
   background-color: #27b0eb;
+  transition-property: background-color;
 }
 
 .footer-media-box2 {
