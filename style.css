@@ -261,14 +261,14 @@ p {
   width: 0;
   height: 4px;
   opacity: 0;
+  transition-property: width, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-link:hover::after {
   opacity: 1;
   width: 100%;
-  transition-property: width, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-link:hover {
