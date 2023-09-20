@@ -37,6 +37,7 @@ form h2 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  scale: 0;
 }
 
 .backdrop {
@@ -63,6 +64,8 @@ form h2 {
   width: 528px;
   height: 581px;
   transform: translate(-50%, -50%);
+  transition-property: scale;
+  scale: 1;
 }
 
 .modal-form-field {
@@ -82,13 +85,13 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   width: 100%;
   height: 40px;
+  transition-property: border-color, fill;
 }
 
 .modal-form-field input:hover {
   border-color: #2196f3;
   fill: #2196f3;
   cursor: pointer;
-  transition-property: border-color, fill;
 }
 
 .button-close-modal {
@@ -129,11 +132,11 @@ textarea {
   width: 18px;
   height: 18px;
   fill: black;
+  transition-property: fill;
 }
 
 .input-field-container:hover .icon {
   fill: #2196f3;
-  transition-property: fill;
 }
 
 .button-close-modal:hover .icon-black {
@@ -191,12 +194,12 @@ textarea {
   letter-spacing: 0.96px;
   margin: auto;
   margin-top: 30px;
+  transition-property: background-color;
 }
 
 .btn-send:hover {
   cursor: pointer;
   background-color: #27b0eb;
-  transition-property: background-color;
 }
 
 .container {
@@ -258,6 +261,7 @@ p {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  transition-property: color;
 }
 
 .item-link::after {
@@ -282,7 +286,6 @@ p {
 
 .item-link:hover {
   color: #2196f3;
-  transition-property: color;
 }
 
 .list-contacts {
@@ -310,11 +313,11 @@ p {
 .icon-header {
   margin-right: 10px;
   fill: #757575;
+  transition-property: fill;
 }
 
 .header-contact:hover .icon-header {
   fill: #2196f3;
-  transition-property: fill;
 }
 
 .logo {
@@ -371,12 +374,12 @@ p {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+  transition-property: background-color;
 }
 
 .hero-btn:hover {
   cursor: pointer;
   background-color: #27b0eb;
-  transition-property: background-color;
 }
 
 .advantages {
@@ -508,22 +511,22 @@ footer .icon {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
 }
 
 .icon {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
+  transition-property: fill;
 }
 
 .icon-container:hover .icon {
   fill: white;
-  transition-property: fill;
 }
 
 .icon-container:hover {
   background-color: #2196f3;
-  transition-property: background-color;
 }
 
 .color-section {
@@ -542,6 +545,7 @@ footer .icon {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
+  transition-property: outline;
 }
 
 .client-logo {
@@ -549,16 +553,15 @@ footer .icon {
   height: 60px;
   margin: 16px 32px;
   fill: #afb1b8;
+  transition-property: fill;
 }
 
 .client-item:hover .client-logo {
   fill: #2196f3;
-  transition-property: fill;
 }
 
 .client-item:hover {
   outline: 1px solid #2196f3;
-  transition-property: outline;
 }
 
 .logo-web-footer {
@@ -632,6 +635,7 @@ footer .icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition-property: background-color;
 }
 
 .modal-open-btn span {
@@ -646,7 +650,6 @@ footer .icon {
 .modal-open-btn:hover {
   cursor: pointer;
   background-color: #27b0eb;
-  transition-property: background-color;
 }
 
 .footer-media-box2 {
