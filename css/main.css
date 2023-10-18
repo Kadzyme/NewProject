@@ -293,20 +293,6 @@ footer {
   fill: #2196f3;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.78px;
-  font-style: normal;
-}
-.logo-web {
-  color: #2196f3;
-}
-.logo-studio {
-  color: black;
-}
-
 .hero {
   padding: 200px 0;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/section-hero.jpg");
@@ -486,8 +472,7 @@ footer {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  cursor: pointer;
-  transition-property: outline;
+  transition-property: border-color;
 }
 .client-list-item-logo {
   width: 106px;
@@ -500,7 +485,8 @@ footer {
   fill: #2196f3;
 }
 .client-list-item:hover {
-  outline: 1px solid #2196f3;
+  cursor: pointer;
+  border-color: #2196f3;
 }
 
 .footer-container {
@@ -522,11 +508,11 @@ footer .icon {
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
 }
-.icon-container .icon-container:hover .icon {
-  fill: white;
-}
 .icon-container:hover {
   background-color: #2196f3;
+}
+.icon-container:hover .icon {
+  fill: white;
 }
 
 .icon {
@@ -540,10 +526,22 @@ footer .icon {
   background: #f5f4fa;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  font-style: normal;
+}
+.logo-web {
+  color: #2196f3;
+}
 .logo-web-footer {
   color: #2196f3;
 }
-
+.logo-studio {
+  color: black;
+}
 .logo-studio-footer {
   color: #fff;
 }

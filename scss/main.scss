@@ -323,22 +323,6 @@ footer {
   }
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.78px;
-  font-style: normal;
-
-  &-web {
-    color: #2196f3;
-  }
-
-  &-studio {
-    color: black;
-  }
-}
-
 .hero {
   padding: 200px 0;
   background-image: linear-gradient(
@@ -540,8 +524,7 @@ footer {
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    cursor: pointer;
-    transition-property: outline;
+    transition-property: border-color;
 
     &-logo {
       width: 106px;
@@ -556,7 +539,8 @@ footer {
     }
 
     &:hover {
-      outline: 1px solid #2196f3;
+      cursor: pointer;
+      border-color: #2196f3;
     }
   }
 }
@@ -580,12 +564,12 @@ footer .icon {
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
 
-  .icon-container:hover .icon {
-    fill: white;
-  }
-
   &:hover {
     background-color: #2196f3;
+
+    .icon {
+      fill: white;
+    }
   }
 }
 
@@ -600,12 +584,28 @@ footer .icon {
   background: #f5f4fa;
 }
 
-.logo-web-footer {
-  color: #2196f3;
-}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  font-style: normal;
 
-.logo-studio-footer {
-  color: #fff;
+  &-web {
+    color: #2196f3;
+
+    &-footer {
+      color: #2196f3;
+    }
+  }
+
+  &-studio {
+    color: black;
+
+    &-footer {
+      color: #fff;
+    }
+  }
 }
 
 .footer-contacs-list {
