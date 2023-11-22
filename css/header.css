@@ -1,0 +1,159 @@
+* {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+
+iframe {
+  width: 100%;
+  border: 0;
+  margin: 0;
+  height: 80px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  font-style: normal;
+}
+.logo-web {
+  color: #2196f3;
+}
+.logo-web-footer {
+  color: #2196f3;
+}
+.logo-studio {
+  color: black;
+}
+.logo-studio-footer {
+  color: #fff;
+}
+
+* {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+}
+
+.header {
+  height: 80px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.navigation .list {
+  margin-left: 93px;
+  display: flex;
+  justify-content: space-between;
+  width: 281px;
+  height: 100%;
+}
+.navigation .list-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.navigation .list-item-link {
+  display: inline-block;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  transition-property: color;
+}
+.navigation .list-item-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+  background-color: #2196f3;
+  width: 0;
+  height: 4px;
+  opacity: 0;
+  transition-property: width, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation .list-item-link:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+.navigation .list-item-link:hover {
+  color: #2196f3;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-list-item {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.contacts-list-item + .contacts-list-item {
+  margin-left: 50px;
+}
+.contacts-list-item-link {
+  color: #757575;
+  display: flex;
+  align-items: center;
+}
+.contacts-list-item-link-icon {
+  margin-right: 10px;
+  fill: #757575;
+  transition-property: fill;
+}
+.contacts-list-item-link:hover {
+  color: #2196f3;
+}
+.contacts-list-item-link:hover .contacts-list-item-link-icon {
+  fill: #2196f3;
+}
