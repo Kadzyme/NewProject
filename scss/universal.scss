@@ -6,18 +6,6 @@
   transition-delay: 0ms;
 }
 
-.iframe {
-  width: 100%;
-  border: 0;
-  margin: 0;
-  border: none;
-  overflow: hidden;
-
-  &-header {
-    height: $height-for-header;
-  }
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -38,9 +26,13 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+body,
+iframe {
   margin: 0;
   padding: 0;
+  border: none;
+  display: block;
 }
 
 ul {
@@ -70,5 +62,28 @@ ul {
     &-footer {
       color: #fff;
     }
+  }
+}
+
+.center {
+  margin: auto;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  border: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.iframe {
+  &-header {
+    height: $height-for-header;
+  }
+
+  &-footer {
+    height: $height-for-footer;
   }
 }

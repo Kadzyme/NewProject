@@ -4,17 +4,6 @@
   transition-delay: 0ms;
 }
 
-.iframe {
-  width: 100%;
-  border: 0;
-  margin: 0;
-  border: none;
-  overflow: hidden;
-}
-.iframe-header {
-  height: 80px;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -36,9 +25,13 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+body,
+iframe {
   margin: 0;
   padding: 0;
+  border: none;
+  display: block;
 }
 
 ul {
@@ -65,4 +58,24 @@ ul {
 }
 .logo-studio-footer {
   color: #fff;
+}
+
+.center {
+  margin: auto;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  border: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.iframe-header {
+  height: 80px;
+}
+.iframe-footer {
+  height: 252px;
 }

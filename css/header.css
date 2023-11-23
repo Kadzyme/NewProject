@@ -4,10 +4,14 @@
   transition-delay: 0ms;
 }
 
-iframe {
+.iframe {
   width: 100%;
   border: 0;
   margin: 0;
+  border: none;
+  overflow: hidden;
+}
+.iframe-header {
   height: 80px;
 }
 
@@ -61,6 +65,11 @@ ul {
 }
 .logo-studio-footer {
   color: #fff;
+}
+
+.center {
+  margin: auto;
+  justify-content: center;
 }
 
 * {
