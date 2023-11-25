@@ -42,25 +42,32 @@
     border: 1px solid #eee;
     position: relative;
 
-    &-img {
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 294px;
-      padding: 63px 24px;
-      background-color: rgba(33, 150, 243, 0.9);
-      color: #fff;
-      font-family: Roboto;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28px; /* 155.556% */
-      letter-spacing: 0.54px;
+    &-container {
+      position: relative;
+      overflow: hidden;
 
-      &:hover {
+      &:hover &-img {
         opacity: 1;
+        top: 0;
+      }
+
+      &-img {
+        transition-property: all;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        padding: 63px 24px;
+        background-color: rgba(33, 150, 243, 0.9);
+        color: #fff;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+        letter-spacing: 0.54px;
       }
     }
 
