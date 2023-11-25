@@ -39,7 +39,7 @@
 
       &-link {
         display: inline-block;
-        color: #212121;
+        color: $color-main;
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.28px;
@@ -51,7 +51,7 @@
           bottom: 0;
           left: 0;
           border-radius: 2px;
-          background-color: #2196f3;
+          background-color: $color-main-selected;
           width: 0;
           height: 4px;
           opacity: 0;
@@ -66,7 +66,7 @@
         }
 
         &:hover {
-          color: #2196f3;
+          color: $color-main-selected;
         }
       }
     }
@@ -87,22 +87,22 @@
     }
 
     &-link {
-      color: #757575;
+      color: $color-additional;
       display: flex;
       align-items: center;
 
       &-icon {
         margin-right: 10px;
-        fill: #757575;
+        fill: $color-additional;
         transition-property: fill;
       }
 
       &:hover {
-        color: #2196f3;
+        color: $color-main-selected;
       }
 
       &:hover &-icon {
-        fill: #2196f3;
+        fill: $color-main-selected;
       }
     }
   }

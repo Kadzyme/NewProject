@@ -50,7 +50,7 @@
     cursor: pointer;
 
     &:hover .icon-black {
-      fill: #2196f3;
+      fill: $color-main-selected;
       transition-property: fill;
     }
   }
@@ -69,8 +69,8 @@
       }
 
       & label {
-        color: #757575;
-        font-family: "Roboto";
+        color: $color-additional;
+        font-family: $font-family-main;
         font-size: 12px;
         letter-spacing: 0.12px;
       }
@@ -85,8 +85,8 @@
       }
 
       & input:hover {
-        border-color: #2196f3;
-        fill: #2196f3;
+        border-color: $color-main-selected;
+        fill: $color-main-selected;
         cursor: pointer;
       }
     }
@@ -118,7 +118,7 @@
   }
 
   &:hover .icon {
-    fill: #2196f3;
+    fill: $color-main-selected;
   }
 }
 
@@ -136,8 +136,8 @@
   column-gap: 7px;
 
   & p {
-    color: #757575;
-    font-family: "Roboto";
+    color: $color-additional;
+    font-family: $font-family-main;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -146,20 +146,20 @@
 
   & a {
     text-decoration: underline;
-    color: #2196f3;
+    color: $color-main-selected;
   }
 }
 
 .btn-send {
   display: block;
   border-radius: 4px;
-  background: #2196f3;
+  background: $color-main-selected;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 200px;
   height: 50px;
   color: #fff;
   text-align: center;
-  font-family: "Roboto";
+  font-family: $font-family-main;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -208,7 +208,7 @@
   &-btn {
     width: 216px;
     height: 50px;
-    background-color: #2196f3;
+    background-color: $color-main-selected;
     color: white;
     border: none;
     margin: 0 auto;
@@ -264,7 +264,6 @@
       }
 
       &-title {
-        color: #212121;
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.42px;
@@ -272,7 +271,7 @@
 
       &-desc {
         margin-top: 10px;
-        color: #757575;
+        color: $color-additional;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.42px;
@@ -282,7 +281,6 @@
 }
 
 .section-title {
-  color: #212121;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -338,7 +336,6 @@
         padding: 30px 32px;
 
         &-name {
-          color: #212121;
           text-align: center;
           font-size: 16px;
           font-weight: 500;
@@ -346,7 +343,7 @@
         }
 
         &-position {
-          color: #757575;
+          color: $color-additional;
           text-align: center;
           font-size: 16px;
           letter-spacing: 0.48px;
@@ -377,7 +374,7 @@
   &-item {
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
+    border: 1px solid $fill-icon-main;
     border-radius: 4px;
     transition-property: border-color;
 
@@ -385,17 +382,17 @@
       width: 106px;
       height: 60px;
       margin: 16px 32px;
-      fill: #afb1b8;
+      fill: $fill-icon-main;
       transition-property: fill;
     }
 
     &:hover &-logo {
-      fill: #2196f3;
+      fill: $color-main-selected;
     }
 
     &:hover {
       cursor: pointer;
-      border-color: #2196f3;
+      border-color: $color-main-selected;
     }
   }
 }
@@ -415,7 +412,7 @@
   transition-property: background-color;
 
   &:hover {
-    background-color: #2196f3;
+    background-color: $color-main-selected;
 
     .icon {
       fill: white;
@@ -424,7 +421,7 @@
 }
 
 .icon {
-  fill: #afb1b8;
+  fill: $fill-icon-main;
   width: 20px;
   height: 20px;
   transition-property: fill;

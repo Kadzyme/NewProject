@@ -22,7 +22,7 @@ footer {
   transition-property: background-color;
 
   &:hover {
-    background-color: #2196f3;
+    background-color: $color-main-selected;
 
     .icon {
       fill: white;
@@ -31,7 +31,7 @@ footer {
 }
 
 .icon {
-  fill: #afb1b8;
+  fill: $fill-icon-main;
   width: 20px;
   height: 20px;
   transition-property: fill;
@@ -57,7 +57,6 @@ footer .icon {
   line-height: 24px;
   letter-spacing: 0.42px;
   margin: 20px 0 9px;
-  font-style: normal;
 }
 
 .footer-contact {
@@ -65,7 +64,6 @@ footer .icon {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
-  font-style: normal;
 }
 
 .flex {
@@ -98,7 +96,7 @@ footer .icon {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: #2196f3;
+  background: $color-main-selected;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 0 28px;
   display: flex;
@@ -133,7 +131,7 @@ footer .icon {
   height: 50px;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Roboto";
+  font-family: $font-family-main;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.48px;

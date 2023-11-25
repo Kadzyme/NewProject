@@ -10,9 +10,8 @@
     border: none;
     border-radius: 4px;
     background: #f5f4fa;
-    color: #212121;
+    color: $color-main;
     text-align: center;
-    font-family: "Roboto";
     font-size: 16px;
     font-weight: 500;
     line-height: 26px; /* 162.5% */
@@ -38,7 +37,6 @@
   &-item {
     width: 370px;
     height: 404px;
-    font-family: "Roboto";
     border: 1px solid #eee;
     position: relative;
 
@@ -62,7 +60,6 @@
         padding: 63px 24px;
         background-color: rgba(33, 150, 243, 0.9);
         color: #fff;
-        font-family: Roboto;
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -80,7 +77,7 @@
       padding: 20px 24px;
 
       & p {
-        color: #212121;
+        color: $color-main;
         font-size: 18px;
         font-weight: 700;
         line-height: 36px; /* 200% */
@@ -88,7 +85,7 @@
       }
 
       & span {
-        color: #757575;
+        color: $color-additional;
         font-size: 16px;
         font-weight: 400;
         line-height: 30px; /* 187.5% */

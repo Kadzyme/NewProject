@@ -2,6 +2,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -41,7 +42,7 @@ ul {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
@@ -93,7 +94,6 @@ iframe {
   background: #f5f4fa;
   color: #212121;
   text-align: center;
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 26px; /* 162.5% */
@@ -117,7 +117,6 @@ iframe {
 .portfolio-list-item {
   width: 370px;
   height: 404px;
-  font-family: "Roboto";
   border: 1px solid #eee;
   position: relative;
 }
@@ -140,7 +139,6 @@ iframe {
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   color: #fff;
-  font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
