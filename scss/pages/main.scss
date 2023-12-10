@@ -1,4 +1,4 @@
-@import "universal.css";
+@import "../utils/universal.scss";
 
 .is-hidden {
   opacity: 0;
@@ -176,6 +176,20 @@
 
 .section {
   padding: 0 47px;
+
+  &-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
+
+.color-section {
+  background: #f5f4fa;
 }
 
 .hero {
@@ -278,16 +292,6 @@
       }
     }
   }
-}
-
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  padding-top: 118px;
-  padding-bottom: 50px;
 }
 
 .we-do-list {

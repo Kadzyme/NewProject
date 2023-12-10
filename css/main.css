@@ -2,6 +2,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -25,9 +26,13 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+body,
+iframe {
   margin: 0;
   padding: 0;
+  border: none;
+  display: block;
 }
 
 ul {
@@ -37,7 +42,7 @@ ul {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
@@ -74,12 +79,6 @@ iframe {
 }
 .iframe-footer {
   height: 252px;
-}
-
-footer {
-  background: #2f303a;
-  padding: 60px 0;
-  display: flex;
 }
 
 .is-hidden {
@@ -147,7 +146,7 @@ footer {
 }
 .modal-form-field label {
   color: #757575;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   letter-spacing: 0.12px;
 }
@@ -207,7 +206,7 @@ footer {
 }
 .terms-of-the-contract p {
   color: #757575;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -227,7 +226,7 @@ footer {
   height: 50px;
   color: #fff;
   text-align: center;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -243,6 +242,19 @@ footer {
 
 .section {
   padding: 0 47px;
+}
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.color-section {
+  background: #f5f4fa;
 }
 
 .hero {
@@ -320,7 +332,6 @@ footer {
   height: 70px;
 }
 .advantages-list-item-title {
-  color: #212121;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -331,17 +342,6 @@ footer {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
-}
-
-.section-title {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  padding-top: 118px;
-  padding-bottom: 50px;
 }
 
 .we-do-list {
@@ -389,7 +389,6 @@ footer {
   padding: 30px 32px;
 }
 .team-container .team-list-item-info-name {
-  color: #212121;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
